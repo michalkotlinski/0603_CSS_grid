@@ -1,11 +1,5 @@
 .container {
     display: grid;
-    grid-template-columns: 100px 200px;
+    grid-template-columns: 100px repeat(2, 1fr 2fr);
 }
 
-.container__item {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
