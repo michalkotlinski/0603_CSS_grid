@@ -6,6 +6,10 @@
     border: 1px solid #ccc;
     margin: 20px;
     padding: 20px;
+    grid-template-areas:
+    "left middle middle right"
+    "left middle middle right"
+    ;
 }
 
 .container__item {
@@ -18,8 +22,10 @@
 }
 
 .container__item--last {
-    grid-column: 2 / span 3;
+    /*grid-column: 2 / span 3;
     grid-row: 1 / span 3;
-    
+    grid-area: 1 / 2 / span 3 / span 3;*/
+    grid-area: middle;
+
     
 }
