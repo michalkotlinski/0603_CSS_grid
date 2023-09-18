@@ -1,14 +1,20 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     height: 400px;
     border: 1px solid #ccc;
     margin: 20px;
     padding: 20px;
     grid-template-areas:
-    "left middle middle right"
-    "left middle middle right"
+    /*"header header header"
+    "main main aside"
+    "main main aside"
+    "footer footer footer"*/
+    "hd hd hd"
+    "mn mn as"
+    "mn mn as"
+    "ft ft ft"
     ;
 }
 
@@ -25,7 +31,7 @@
     /*grid-column: 2 / span 3;
     grid-row: 1 / span 3;
     grid-area: 1 / 2 / span 3 / span 3;*/
-    grid-area: middle;
+    grid-area: ft;
 
     
 }
